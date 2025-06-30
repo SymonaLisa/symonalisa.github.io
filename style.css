@@ -1,0 +1,32 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #D5F1E4;
+  color: #0B3C2E;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0B3C2E;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #6ECF96;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1, h2 {
+  color: #1A603B;
+}
+
+footer {
+  background-color: #3A8D5A;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
