@@ -129,6 +129,55 @@ footer {
   margin-top: 3rem;
 }
 
+/* Social Icons Styling */
+footer a {
+  color: #0B3C2E; /* dark green */
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+}
+
+footer a:last-child {
+  margin-right: 0;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #6ECF96; /* light green hover */
+  outline: none;
+}
+
+/* Individual icon colors */
+footer a.github {
+  color: #0B3C2E;
+}
+footer a.github:hover {
+  color: #3A8D5A;
+}
+
+footer a.linkedin {
+  color: #1A603B;
+}
+footer a.linkedin:hover {
+  color: #6ECF96;
+}
+
+footer a.devpost {
+  color: #3A8D5A;
+}
+footer a.devpost:hover {
+  color: #6ECF96;
+}
+
+/* FontAwesome icons sizing */
+footer a i {
+  font-size: 28px;
+  line-height: 1;
+}
+
 /* Accessibility helper */
 .sr-only {
   position: absolute;
@@ -166,3 +215,4 @@ footer {
     font-size: 0.95rem;
   }
 }
+
