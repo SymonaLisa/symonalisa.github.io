@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -19,12 +20,14 @@ header {
 header h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
+  line-height: 1.2;
 }
 
 header p {
   font-size: 1.2rem;
   margin: 0.5rem 0 1rem;
   opacity: 0.9;
+  line-height: 1.2;
 }
 
 /* Navigation */
@@ -40,8 +43,10 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   color: #3A8D5A;
+  outline: none;
 }
 
 /* Banner */
@@ -70,6 +75,7 @@ h2 {
   border-bottom: 2px solid #3A8D5A;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 ul {
@@ -78,24 +84,6 @@ ul {
 
 li {
   margin-bottom: 0.5rem;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #6ECF96;
-  color: #0B3C2E;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-  background-color: #3A8D5A;
-  transform: translateY(-2px);
 }
 
 /* Cards (used on projects page) */
@@ -116,6 +104,37 @@ li {
 .card h3 {
   color: #0B3C2E;
   margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #6ECF96;
+  color: #0B3C2E;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #3A8D5A;
+  transform: translateY(-2px);
+  outline: none;
+  box-shadow: 0 0 0 3px #6ECF96;
+}
+
+.btn:focus {
+  outline-offset: 4px;
 }
 
 /* Footer */
@@ -131,7 +150,7 @@ footer {
 
 /* Social Icons Styling */
 footer a {
-  color: #0B3C2E; /* dark green */
+  color: #e0f2e9; /* lighter green for better contrast */
   margin-right: 1rem;
   transition: color 0.3s ease;
   text-decoration: none;
@@ -146,30 +165,33 @@ footer a:last-child {
 
 footer a:hover,
 footer a:focus {
-  color: #6ECF96; /* light green hover */
+  color: #a1d6b6; /* light green hover */
   outline: none;
 }
 
 /* Individual icon colors */
 footer a.github {
-  color: #0B3C2E;
+  color: #e0f2e9;
 }
+
 footer a.github:hover {
-  color: #3A8D5A;
+  color: #a1d6b6;
 }
 
 footer a.linkedin {
-  color: #1A603B;
+  color: #b0d8a5;
 }
+
 footer a.linkedin:hover {
-  color: #6ECF96;
+  color: #d4f4dd;
 }
 
 footer a.devpost {
-  color: #3A8D5A;
+  color: #a1d6b6;
 }
+
 footer a.devpost:hover {
-  color: #6ECF96;
+  color: #d4f4dd;
 }
 
 /* FontAwesome icons sizing */
@@ -215,4 +237,12 @@ footer a i {
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 480px) {
+  .card {
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+  }
+}
+
 
