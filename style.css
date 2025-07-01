@@ -4,7 +4,7 @@ body {
   color: #0B3C2E;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.8; /* Step 3: increased line-height */
   scroll-behavior: smooth;
 }
 
@@ -15,12 +15,16 @@ header {
   padding: 2rem 1.5rem 1rem;
   text-align: center;
   border-bottom: 4px solid #6ECF96;
+  position: sticky; /* Step 4: sticky nav */
+  top: 0;
+  z-index: 10;
 }
 
 header h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
   line-height: 1.2;
+  letter-spacing: 0.5px; /* Step 3: letter spacing */
 }
 
 header p {
@@ -47,6 +51,7 @@ nav a:hover,
 nav a:focus {
   color: #3A8D5A;
   outline: none;
+  text-decoration: underline; /* Step 2: hover underline */
 }
 
 /* Banner */
@@ -66,8 +71,13 @@ nav a:focus {
 /* Section Layout */
 .section {
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 2rem auto 4rem; /* Step 1: added bottom margin for vertical spacing */
   padding: 0 1.5rem;
+
+  /* Step 1: consistent spacing with flex and gap */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h2 {
@@ -75,7 +85,9 @@ h2 {
   border-bottom: 2px solid #3A8D5A;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
-  line-height: 1.2;
+  line-height: 1.8; /* Step 3: increased for readability */
+  letter-spacing: 0.5px; /* Step 3: letter spacing */
+  font-size: 2rem; /* Step 3: larger font size */
 }
 
 ul {
@@ -94,21 +106,33 @@ li {
   padding: 1.5rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 10px rgba(11, 60, 46, 0.08);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover {
   box-shadow: 0 6px 14px rgba(11, 60, 46, 0.15);
+  transform: translateY(-4px); /* Step 2: card hover */
 }
 
 .card h3 {
   color: #0B3C2E;
   margin-bottom: 0.5rem;
   line-height: 1.2;
+  letter-spacing: 0.5px; /* Step 3: letter spacing */
 }
 
 .card p {
   margin-bottom: 1rem;
+  line-height: 1.6; /* Step 3: improved readability */
+}
+
+/* Project Tags (Step 6) */
+.card p.tags {
+  font-size: 0.9rem;
+  color: #3A8D5A;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 /* Buttons */
@@ -123,6 +147,7 @@ li {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
+  margin-right: 0.5rem; /* Step 1: spacing between buttons */
 }
 
 .btn:hover,
@@ -233,6 +258,7 @@ footer a i {
   .btn {
     padding: 0.6rem 1.2rem;
     font-size: 0.95rem;
+    margin-right: 0.3rem; /* smaller spacing on mobile */
   }
 }
 
@@ -253,3 +279,4 @@ footer a i {
   margin: 0 auto 1rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
