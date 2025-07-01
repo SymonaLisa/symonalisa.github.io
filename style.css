@@ -15,9 +15,7 @@ header {
   padding: 2rem 1.5rem 1rem;
   text-align: center;
   border-bottom: 4px solid #6ECF96;
-  position: sticky; /* Step 4: sticky nav */
-  top: 0;
-  z-index: 10;
+  /* Removed sticky positioning */
 }
 
 header h1 {
@@ -279,4 +277,3 @@ footer a i {
   margin: 0 auto 1rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
