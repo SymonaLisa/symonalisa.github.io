@@ -1,7 +1,7 @@
 # 🌿 Virgi Symone Jordaan – Portfolio
 
 Welcome to my personal portfolio website!  
-Built to showcase my transition from audit and SEO into the world of AI, machine learning, and intelligent systems.
+Built to showcase my transition from audit and SEO into the exciting world of AI, machine learning, and intelligent systems.
 
 > 💻 **Live Site:** [https://symonalisa.github.io](https://symonalisa.github.io)
 
@@ -10,14 +10,14 @@ Built to showcase my transition from audit and SEO into the world of AI, machine
 ## ✨ About Me
 
 Hi, I'm **Virgi Symone Jordaan** – a Vibe Coder, AI explorer, and remote work pro.  
-From scaling SEO traffic by 58% to auditing JSE-listed clients at PwC, I now focus on building intelligent, ethical, and human-centered tech.  
+From scaling SEO traffic by 58% to auditing JSE-listed clients at PwC, I now focus on building intelligent, ethical, and human-centered technology.  
 This site is a home for my journey, work, and creative experiments at the intersection of **data, strategy, and empathy**.
 
 ---
 
 ## 🔍 Featured Projects
 
-| Project                     | Description                                      |
+| Project                     | Description                                        |
 | --------------------------- | ------------------------------------------------ |
 | [QuickKash](https://github.com/SymonaLisa/QuickKash)               | Decentralized tip jar built with Algorand + Supabase  |
 | [AI Study Companion](https://github.com/SymonaLisa/AIStudyCompanion) | LLM-powered study buddy for adaptive learning         |
@@ -51,3 +51,4 @@ This site is a home for my journey, work, and creative experiments at the inters
 ---
 
 _Thanks for stopping by. Stay curious! ✨_
+
