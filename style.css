@@ -63,7 +63,7 @@ nav a:focus {
   border-bottom: 5px solid #3A8D5A;
 }
 
-/* Section layout */
+/* Section Layout */
 .section {
   max-width: 900px;
   margin: 2rem auto;
@@ -86,7 +86,7 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* Cards (used on projects page) */
+/* Cards (Projects Page) */
 .card {
   background-color: #fff;
   border: 2px solid #6ECF96;
@@ -148,9 +148,9 @@ footer {
   margin-top: 3rem;
 }
 
-/* Social Icons Styling */
+/* Social Icons */
 footer a {
-  color: #e0f2e9; /* lighter green for better contrast */
+  color: #e0f2e9;
   margin-right: 1rem;
   transition: color 0.3s ease;
   text-decoration: none;
@@ -165,11 +165,10 @@ footer a:last-child {
 
 footer a:hover,
 footer a:focus {
-  color: #a1d6b6; /* light green hover */
+  color: #a1d6b6;
   outline: none;
 }
 
-/* Individual icon colors */
 footer a.github {
   color: #e0f2e9;
 }
@@ -194,13 +193,12 @@ footer a.devpost:hover {
   color: #d4f4dd;
 }
 
-/* FontAwesome icons sizing */
 footer a i {
   font-size: 28px;
   line-height: 1;
 }
 
-/* Accessibility helper */
+/* Accessibility */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -213,7 +211,7 @@ footer a i {
   border: 0;
 }
 
-/* Responsive tweaks */
+/* Responsive Tweaks */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
@@ -245,6 +243,7 @@ footer a i {
   }
 }
 
+/* Profile Image */
 .profile-img {
   width: 140px;
   height: 140px;
@@ -254,4 +253,5 @@ footer a i {
   margin: 0 auto 1rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
