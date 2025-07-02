@@ -45,7 +45,6 @@ This site is a home for my journey, work, and creative experiments at the inters
 
 ## 📫 Contact
 
-📧 Email: [virgisymonejordaan@outlook.com](mailto:virgisymonejordaan@outlook.com)  
 🔗 LinkedIn: [linkedin.com/in/virgi-symone-jordaan](https://www.linkedin.com/in/virgi-symone-jordaan)  
 
 ---
