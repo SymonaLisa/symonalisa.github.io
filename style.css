@@ -4,7 +4,7 @@ body {
   color: #0B3C2E;
   margin: 0;
   padding: 0;
-  line-height: 1.8; /* Step 3: increased line-height */
+  line-height: 1.8;
   scroll-behavior: smooth;
 }
 
@@ -15,14 +15,13 @@ header {
   padding: 2rem 1.5rem 1rem;
   text-align: center;
   border-bottom: 4px solid #6ECF96;
-  /* Removed sticky positioning */
 }
 
 header h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
   line-height: 1.2;
-  letter-spacing: 0.5px; /* Step 3: letter spacing */
+  letter-spacing: 0.5px;
 }
 
 header p {
@@ -48,14 +47,15 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: #3A8D5A;
+  text-decoration: underline;
   outline: none;
-  text-decoration: underline; /* Step 2: hover underline */
 }
 
 /* Banner */
 .banner-container {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .banner-img {
@@ -66,13 +66,37 @@ nav a:focus {
   border-bottom: 5px solid #3A8D5A;
 }
 
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 90%;
+}
+
+.banner-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-text .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-text .branding-statement {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 /* Section Layout */
 .section {
   max-width: 900px;
-  margin: 2rem auto 4rem; /* Step 1: added bottom margin for vertical spacing */
+  margin: 2rem auto 4rem;
   padding: 0 1.5rem;
-
-  /* Step 1: consistent spacing with flex and gap */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -83,9 +107,9 @@ h2 {
   border-bottom: 2px solid #3A8D5A;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
-  line-height: 1.8; /* Step 3: increased for readability */
-  letter-spacing: 0.5px; /* Step 3: letter spacing */
-  font-size: 2rem; /* Step 3: larger font size */
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  font-size: 2rem;
 }
 
 ul {
@@ -96,7 +120,7 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* Cards (Projects Page) */
+/* Cards */
 .card {
   background-color: #fff;
   border: 2px solid #6ECF96;
@@ -109,22 +133,21 @@ li {
 
 .card:hover {
   box-shadow: 0 6px 14px rgba(11, 60, 46, 0.15);
-  transform: translateY(-4px); /* Step 2: card hover */
+  transform: translateY(-4px);
 }
 
 .card h3 {
   color: #0B3C2E;
   margin-bottom: 0.5rem;
   line-height: 1.2;
-  letter-spacing: 0.5px; /* Step 3: letter spacing */
+  letter-spacing: 0.5px;
 }
 
 .card p {
   margin-bottom: 1rem;
-  line-height: 1.6; /* Step 3: improved readability */
+  line-height: 1.6;
 }
 
-/* Project Tags (Step 6) */
 .card p.tags {
   font-size: 0.9rem;
   color: #3A8D5A;
@@ -145,7 +168,7 @@ li {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
-  margin-right: 0.5rem; /* Step 1: spacing between buttons */
+  margin-right: 0.5rem;
 }
 
 .btn:hover,
@@ -154,10 +177,6 @@ li {
   transform: translateY(-2px);
   outline: none;
   box-shadow: 0 0 0 3px #6ECF96;
-}
-
-.btn:focus {
-  outline-offset: 4px;
 }
 
 /* Footer */
@@ -171,13 +190,11 @@ footer {
   margin-top: 3rem;
 }
 
-/* Social Icons */
 footer a {
   color: #e0f2e9;
   margin-right: 1rem;
   transition: color 0.3s ease;
   text-decoration: none;
-  vertical-align: middle;
   display: inline-flex;
   align-items: center;
 }
@@ -192,33 +209,32 @@ footer a:focus {
   outline: none;
 }
 
-footer a.github {
-  color: #e0f2e9;
+/* Profile Image */
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-footer a.github:hover {
-  color: #a1d6b6;
+/* Forms */
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-footer a.linkedin {
-  color: #b0d8a5;
-}
-
-footer a.linkedin:hover {
-  color: #d4f4dd;
-}
-
-footer a.devpost {
-  color: #a1d6b6;
-}
-
-footer a.devpost:hover {
-  color: #d4f4dd;
-}
-
-footer a i {
-  font-size: 28px;
-  line-height: 1;
+form label {
+  font-weight: bold;
+  color: #0B3C2E;
 }
 
 /* Accessibility */
@@ -240,6 +256,18 @@ footer a i {
     font-size: 2rem;
   }
 
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text .subtitle {
+    font-size: 1rem;
+  }
+
+  .banner-text .branding-statement {
+    font-size: 0.95rem;
+  }
+
   nav a {
     display: inline-block;
     margin: 0.5rem;
@@ -250,13 +278,13 @@ footer a i {
   }
 
   .banner-img {
-    height: 160px;
+    height: 220px;
   }
 
   .btn {
     padding: 0.6rem 1.2rem;
     font-size: 0.95rem;
-    margin-right: 0.3rem; /* smaller spacing on mobile */
+    margin-right: 0.3rem;
   }
 }
 
@@ -265,31 +293,17 @@ footer a i {
     margin-bottom: 1.2rem;
     padding: 1rem;
   }
-}
 
-/* Profile Image */
-.profile-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 1rem auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+  .banner-text h1 {
+    font-size: 1.5rem;
+  }
 
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
+  .banner-text .subtitle,
+  .banner-text .branding-statement {
+    font-size: 0.9rem;
+  }
 
-form label {
-  font-weight: bold;
-  color: #0B3C2E;
+  .banner-img {
+    height: 160px;
+  }
 }
