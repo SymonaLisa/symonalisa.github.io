@@ -169,6 +169,7 @@ li {
   transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn:hover,
@@ -256,6 +257,7 @@ form label {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .project-media img {
@@ -279,17 +281,24 @@ form label {
   font-style: italic;
 }
 
+/* Project Media Buttons */
+.project-media a.btn {
+  display: inline-block;
+}
+
 /* Responsive layout for media */
 @media (min-width: 768px) {
   .project-media {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .project-media > div {
     flex: 1;
     max-width: 48%;
+    margin-right: 1rem;
   }
 }
 
